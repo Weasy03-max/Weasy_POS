@@ -1,0 +1,3 @@
+{% extends "base.html" %}{% block title %}Sign in · Weasy POS{% endblock %}{% block content %}
+<div class="login-card"><div class="brand text-center mb-2">WEASY<span>POS</span></div><p class="text-secondary text-center mb-4">Sign in to your business workspace</p>
+<form method="post">{{ form.hidden_tag() }}<label class="form-label">Username</label>{{ form.username(class="form-control mb-3",placeholder="Enter username") }}<label class="form-label">Password</label>{{ form.password(class="form-control mb-4",placeholder="Enter password") }}{{ form.submit(class="btn btn-gold w-100") }}</form></div>{% endblock %}
